@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="kmp.css">
+  <title>kmp.store</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-1">
+      <div class="seller">
+        <div class="logo">
+          <img src="imgs/icons/kmp logo.png" alt="">
+        </div>
+        <div class="mobile">
+          <img src="imgs/icons/dowload app.png" alt="">
+        </div>
+        <div class="caller-center">
+          <a href="tel:+254113595958">
+            <img src="imgs/icons/download.jpeg" alt="">
+            <p>+254113595958</p>
+          </a>
+        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Tracking order</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-2">
+      <div class="logo">
+        <div class="menu">
+          <input type="checkbox" name="check" id="check">
+          <label for="check" onclick="Toggle">
+            <img src="imgs/icons/menu.png" alt="">
+          </label>
+        </div>
+        <div class="menu-list">
+          <ul>
+            <li><button><a href="#">Electronics</a></button></li>
+            <li><button><a href="#">Furnitures</a></button></li>
+            <li><button><a href="#">Kitchen appliances</a></button></li>
+            <li><button><a href="#">Fashions & design</a></button></li>
+            <li><button><a href="#">Second hands</a></button></li>
+            <li><button><a href="#">Vacants</a></button></li>
+            <li><button><a href="#">Transportation</a></button></li>
+            <li><button><a href="#">Technicians</a></button></li>
+          </ul>
+          <div class="cancel">
+            <label for="check">
+              <img src="imgs/icons/cancel.png" alt="">
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="search">
+        <div class="check">
+          <input type="checkbox" id="check">
+        </div>
+        <div class="drop-down">
+          <label for="check">
+            <button class="category">All <span><img src="imgs/icons/dropdown.png" alt=""></span></button>
+          </label>
+        </div>
+          <ul>
+            <li><button><a href="#">Wholesalers</a></li></button>
+            <li><button><a href="#">Retailers</a></button></li>
+            <li><button><a href="#">Second hands</a></button></li>
+            <li><button><a href="#">Technicians</a></button></li>
+            <li><button><a href="#">Vacants</a></button></li>
+            <li><button><a href="#">Transportation</a></button></li>
+            <li><button><a href="#">shop online</a></button></li>
+            <li><button><a href="#">Services</a></button></li>
+            <li><button><a href="#">K&P Electricals</a></button></li>
+            <li><button><a href="#">Sell</a></button></li>
+          </ul>
+        <input type="text" placeholder="Search Konnect">
+        <button class="search-button"><img src="imgs/icons/search.png" alt=""></button>
+      </div>
+      <div class="cart">
+        <div class="account">
+          <img src="imgs/icons/account.png" alt="">
+        </div>
+        <div class="cart-icon">
+          <img src="imgs/icons/cart.png" alt="">
+          <span>0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="slider">
+    <div class="list">
+      <div class="item active">
+        <img src="imgs/electronics/iron boxes.jpg" alt="">
+        <div class="content">
+          <p>NEW ARRIVALS</p>
+          <h2>Kamukunji Wholesalers</h2>
+          <button>View more</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imgs/Fashion/arrival.webp" alt="">
+        <div class="content">
+          <p>NEW ARRIVALS</p>
+          <h2>Eastleigh Wholesalers</h2>
+          <button>View more</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imgs/electronics/woofer.webp" alt="">
+        <div class="content">
+          <p>NEW ARRIVALS</p>
+          <h2>OTC Wholesalers</h2>
+          <button>View more</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imgs/electronics/kitch.jpg" alt="">
+        <div class="content">
+          <p>NEW ARRIVALS</p>
+          <h2>Electronics Wholesalers</h2>
+          <button>View more</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imgs/electronics/frizz.jpg" alt="">
+        <div class="content">
+          <p>NEW ARRIVALS</p>
+          <h2>Kamukunji Wholesalers</h2>
+          <button>View more</button>
+        </div>
+      </div>
+    </div>
+    <div class="arrows">
+      <button id="prev"><</button>
+      <button id="next">></button>
+    </div>
+    <div class="thumbnail">
+      <div class="item active">
+        <img src="imgs/electronics/iron boxes.jpg" alt="">
+        <div>
+          <p></p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imgs/Fashion/arrival.webp" alt="">
+      </div>
+      <div class="item">
+        <img src="imgs/electronics/woofer.webp" alt="">
+      </div>
+      <div class="item">
+        <img src="imgs/electronics/kitch.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="imgs/electronics/frizz.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <section class="services">
+    <div class="service-box">
+      <img src="imgs/icons/retail.webp" alt="">
+      <a href="brand.html"><p>Shop online</p></a>
+    </div>
+    <div class="service-box">
+      <img src="imgs/icons/wholesale.png" alt="">
+      <a href="wholesale.html"><p>Wholesellers</p></a>
+    </div>
+    <div class="service-box">
+      <img src="imgs/icons/retail.webp" alt="">
+      <a href="retail.html"><p>Retailers</p></a>
+    </div>
+    <div class="service-box">
+      <img src="imgs/icons/vacants.jpg" alt="">
+      <a href="vacant.html"><p>Vacants available</p></a>
+    </div>
+    <div class="service-box">
+      <img src="imgs/icons/jobs.jpg" alt="">
+      <a href="technician.html"><p>Technicians</p></a>
+    </div>
+    <div class="service-box">
+      <img src="imgs/icons/second.jpg" alt="">
+      <a href="secondhand.html"><p>secondhands</p></a>
+    </div>
+    <div class="service-box">
+      <img src="imgs/icons/transport.jpg" alt="">
+      <a href="transportation.html"><p>Transportation</p></a>
+    </div>
+  </section>
+  <section class="category">
+    <div class="category-1">
+      <h1>Trends in Appliances </h1>
+      <div id="products">
+        <div class="product-list-1">
+          <div class="container">
+            <div class="item">
+              <img src="imgs/img/3tap dispenser.jpg" alt="">
+            </div>
+            <div class="list">
+              <p>Electromate 3 taps</p>
+              <button>Explore</button>
+            </div>
+          </div>
+          <div class="container">
+            <div class="item">
+              <img src="imgs/img/oven.jpg" alt="">
+            </div>
+            <div class="list">
+              <p>Oven</p>
+              <button>Explore</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-2">
+          <div class="container">
+            <div class="item">
+              <img src="imgs/img/jiko poa.jpg" alt="">
+            </div>
+            <div class="list">
+              <p>Jiko poa</p>
+              <button>explore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="category-1">
+      <h1>Trends in beddings</h1>
+      <div id="products">
+        <div class="product-list-1">
+          <div class="container">
+            <div class="item">
+              <img src="imgs/Furnitures/velvet.jpg" alt="">
+            </div>
+            <div class="list">
+              <p>Velvet duvet</p>
+              <button>Explore</button>
+            </div>
+          </div>
+          <div class="container">
+            <div class="item">
+              <img src="imgs/Furnitures/cabinet.jpg" alt="">
+            </div>
+            <div class="list">
+              <p>Cabinets</p>
+              <button>Explore</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-2">
+          <div class="container">
+            <div class="item">
+              <img src="imgs/Furnitures/shoeracks (2).jpg" alt="">
+            </div>
+            <div class="list">
+              <p>Portable shoerack</p>
+              <button>explore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="category-1">
+      <h1>Trends in kitchen</h1>
+      <div id="products">
+        <div class="product-list-1">
+          <div class="container">
+            <div class="item">
+              <img src="imgs/home&kitchen/plates.jpg" alt="">
+            </div>
+            <div class="list">
+              <p>Plates & Mugs</p>
+              <button>Explore</button>
+            </div>
+          </div>
+          <div class="container">
+            <div class="item">
+              <img src="imgs/home&kitchen/utencil stand.jpg" alt="">
+            </div>
+            <div class="list">
+              <p>Kitchen cabinets</p>
+              <button>Explore</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-2">
+          <div class="container">
+            <div class="item">
+              <img src="imgs/home&kitchen/oven.jpg" alt="">
+            </div>
+            <div class="list">
+              <p>Ovens </p>
+              <button>Explore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="product-tab">
+    <div class="next">
+      <button><</button>
+    </div>
+    <div class="slider">
+      <div class="item">
+        <div class="image">
+          <img src="imgs/Fashion/mens-jeans.webp" alt="">
+        </div>
+        <div class="item-tab">
+          <p>Men-jeans</p>
+          <button>ksh 800</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="imgs/electronics/headphones.webp" alt="">
+        </div>
+        <div class="item-tab">
+          <p>Head-phones</p>
+          <button>ksh 900</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="imgs/Furnitures/gas cylinder.jpg" alt="">
+        </div>
+        <div class="item-tab">
+          <p>Gas-cylinders</p>
+          <button>ksh 2,200</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="imgs/Health/10pcs lipsticks lasting nonstick.webp" alt="">
+        </div>
+        <div class="item-tab">
+          <p>Non-stick-lipstick-oil</p>
+          <button>ksh 450</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="imgs/home&kitchen/glass cookware.jpg" alt="">
+        </div>
+        <div class="item-tab">
+          <p>Glass-cookware.</p>
+          <button>ksh 1,200</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="imgs/img/3tap dispenser.jpg" alt="">
+        </div>
+        <div class="item-tab">
+          <p>3-tap-dispenser.</p>
+          <button>ksh 7,000</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="imgs/electronics/kettle.webp" alt="">
+        </div>
+        <div class="item-tab">
+          <p>Kettle heater 2L.</p>
+          <button>ksh 850</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="imgs/Fashion/1679749396644bc1aaf58ac4f42f8bc8e470ffbbbcb9c.webp" alt="">
+        </div>
+        <div class="item-tab">
+          <p>Long-sleeved-hood.</p>
+          <button>ksh 700</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="imgs/Furnitures/IMG-20250722-WA0036.jpg" alt="">
+        </div>
+        <div class="item-tab">
+          <p>Velvet-duvet.</p>
+          <button>ksh 4,000</button>
+        </div>
+      </div>
+    </div>
+    <div class="prev">
+      <button>></button>
+    </div>
+  </section> 
+  <section class="malls">
+    <h2>Featured Wholesalers Malls</h2>
+    <div class="pro">
+      <div class="pro1">
+        <div class="image">
+          <img src="imgs/icons/kamukunji trade center.jpg" alt="">
+        </div>
+        <h3>Kamukunji</h3>
+        <p>Purchase inn for mitumba,and wears.</p>
+        <a href="#"><button>Explore</button></a>
+      </div>
+      <div class="pro1">
+        <div class="image">
+          <img src="imgs/icons/otc.jpg" alt="">
+        </div>
+        <h3>OTC Mall</h3>
+        <p>The all you need in machines.</p>
+        <a href="#"><button>Explore</button></a>
+      </div>
+      <div class="pro1">
+        <div class="image">
+          <img src="imgs/icons/eastleigh.jpg">
+        </div>
+        <h3>Nyamakima market</h3>
+        <p>The all you need in Electronics.</p>
+        <a href="#"><button>Explore</button></a>
+      </div>
+      <div class="pro1">
+        <div class="image">
+          <img src="imgs/icons/eastleigh.jpg">
+        </div>
+        <h3>Eastleigh markets</h3>
+        <p>The all you need for fashions and design.</p>
+        <a href="#"><button>Explore</button></a>
+      </div>
+    </div>
+  </section>
+  <section class="get">
+    <h1>Ready to get  started?</h1>
+    <h2>Explore millions of products from trusted suppliers by signing up today!</h2>
+    <button>Get started</button>
+  </section>
+    <section class="footer">
+    <div class="footer-box">
+      <h1>Shoping Guide</h1>
+      <span><a href=""> How to apply aftersale/Refund.</a></span>
+      <span><a href="">How to shop on kmp?</a></span>
+      <span><a href="">How to be become a seller?</a></span>
+      <span><a href="">Forgot Password.</a></span>
+    </div>
+    <div class="footer-box">
+      <h1>Customer Help center</h1>
+      <span><a href="#">Account Settings.</a></span>
+      <span><a href="#">after sale policy.</a></span>
+      <span><a href="#">Terms and Conditions.</a></span>
+      <span><a href="#">Delivery and shipping.</a></span>
+    </div>
+    <div class="footer-box">
+      <h1>Bussiness</h1>
+      <span><a href="#">Become a seller.</a></span>
+      <span><a href="#">sell on k.m.p bussiness.</a></span>
+      <span><a href="#">Market with us.</a></span>
+      <span><a href="#">Meet with suppliers.</a></span>
+      <span><a href="#">Advertise your products.</a></span>
+    </div>
+    <div class="footer-box">
+      <h1>About Us.</h1>
+      <span><a href="#">About Kmp.</a></span>
+      <span><a href="#">Privacy Policy.</a></span>
+      <span><a href="#">Contact Us.</a></span>
+      <span><a href="#">Careers.</a></span>
+  </section>
+
+
+
+  <script src="kmp.js"></script>
+</body>
+</html>
