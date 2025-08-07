@@ -868,7 +868,7 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
   }
   .header-2 {
     display: grid;
-    grid-template-columns: 150px 160px 80px;
+    grid-template-columns: 140px 150px 80px;
     width: 100%;
     height: 50%;
     margin-top: -0px;
@@ -877,7 +877,7 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     visibility: hidden;
   }
   .header-2 .search .category {
-    width: 100px;
+    width: 70px;
     height: 50px;
     border-radius: 0px;
     border: 1px solid black;
@@ -904,56 +904,50 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
   .slider {
     height: 70vh;
     position: relative;
-    margin-top: 120px;
+    margin-top: 100px;
   }
   .slider .list .item .content {
     top: 5%;
     left: 10%;
   }
   .arrows {
-    right: 50px;
+    right: 150px;
     top: 90%;
   }
   .thumbnail {
     height: 150px;
   }
   .services {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: auto;
   }
   .service-box {
-    height: 180px;
-    width: 150px;
+    height: 100px;
+    width: 80px;
     padding: 10px;
-    gap: 30px;
+    gap: 10px;
     border-radius: 20px;
     background-color: #eeeee6;
   }
   .service-box img {
     width: 100%;
-    height: 80%;
-  }
-  .service-box a {
-    width: 100%;
-    height: 20%;
-    text-decoration: none;
-    text-align: center;
-    color: rgb(0, 136, 0);
+    height: 70%;
   }
   .category {
     display: flex;
-    height: 80vh;
+    height: 50vh;
+    width: auto;
   }
   .category-1 {
     width: 1200px;
-    max-width: 95%;
+    max-width: 90%;
   }
   .category-1 h1 {
     color: rgb(0, 136, 0);
     font-size: large;
-    letter-spacing: 3px;
+    letter-spacing: 0px;
     font-weight: 500;
     margin-left: 30px;
   }
