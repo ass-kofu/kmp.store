@@ -24,3 +24,19 @@ function showSlider(){
   let itemACtiveOld =  items['.active'];
   itemACtiveOld.classList.remove('active');
 }
+function showSidebar(){
+  let sideBar = document.querySelector('.header .header-2 .logo .menu-list');
+  sideBar.style.visibility = 'visible'
+}
+function hideSidebar(){
+  let hideSidebar = document.querySelector('.header .header-2 .logo .menu-list');
+  hideSidebar.style.visibility = 'hidden';
+}
+function showList(){
+  let showList = document.querySelector('.header .header-2 .search ul');
+  showList.style.visibility = 'visible';
+}
+function body(){
+  let hideList = document.querySelector('.header .header-2 .search ul');
+  hideList.style.visibility = 'hidden';
+}
