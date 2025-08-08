@@ -14,12 +14,21 @@ productTab.forEach((item, i) => {
   let productContainerWidth = productContainer.width;
 })
 next.onclick = function(){
-  itemActive = itemActive + 1;
-  if (itemActive => countItem){
-    itemActive = 0;
+ showSlider('next')
+}
+prev.onclick = function(){
+  showSlider('prev')
+}
+function showSlider(type){
+  if (type === "next"){
+    item.appendChild(item[0])
+    item.classList.add('next')
+  } else {
+    list.prev(item[item.length - 1])
+    item.classList.add('prev')
   }
-  showSlider();
-};
+}
+
 function showSlider(){
   let itemACtiveOld =  items['.active'];
   itemACtiveOld.classList.remove('active');
